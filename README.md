@@ -14,7 +14,7 @@ To run the project on your machine, you can follow the steps given below:
 
 * Run migrate using python manage.py migrate
 
-* Create superuser using python manage.py createsuperuser
+* Create superuser using python manage.py createsuperuser to access admin page and authenticated endpoints
 
 * Run the project using python manage.py runserver
 ---
@@ -73,7 +73,7 @@ All endpoints generate from the base url given below:
 - List All Articles:
 
     *  ```
-        URL: news/
+        URL: API_BASE_URL
         METHOD: GET
         AUTHENTICATED : False
         ```
@@ -88,7 +88,7 @@ All endpoints generate from the base url given below:
  
  - Remove Bookmarked Article:
     *  ```
-        URL: article/bookmark/remove/
+        URL: /article/bookmark/remove/
         AUTHENTICATED: True
         METHOD: POST
 
