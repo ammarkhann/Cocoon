@@ -1,4 +1,8 @@
-from news.models import *
+from news.models import (
+	Article,
+	Author,
+	Category,
+)
 from rest_framework.serializers import ModelSerializer,SerializerMethodField
 
 from django.contrib.auth import get_user_model
