@@ -4,13 +4,12 @@ from news.models import *
 from .serializers import ArticleSerializer
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-
-
-
+from .pagination import CustomPageNumberPagination
 
 class NewsArticleList(ListAPIView):
 	queryset = Article.objects.all()
 	serializer_class = ArticleSerializer
+	pagination_class = CustomPageNumberPagination
 
 
 
